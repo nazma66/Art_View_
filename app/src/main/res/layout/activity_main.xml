@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E4FFFFFF">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="137dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:background="#E4FFFFFF"
+                android:fontFamily="casual"
+                android:text="Welcome to \nArt Gallery"
+                android:textColor="#E4184673"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="10dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="#E4123456"
+                android:foreground="@drawable/img_2" />
+        </LinearLayout>
+
+        <!-- TextView 3 -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Greatest Painters of All Time 🎨"
+            android:textSize="20dp" />
+
+        <!-- RecyclerView 1 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerv_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- TextView 4 -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#A1FFFFFF"
+            android:fontFamily="sans-serif-condensed"
+            android:text=" What's your favourite ART type? \nLets explore!♡"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+        <!-- RecyclerView 2 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerv_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+        <!-- TextView 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Art Collections.😊"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:background="#F3CECB"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_marginTop="8dp"/>
+
+        <!-- RecyclerView 3 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
